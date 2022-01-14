@@ -109,8 +109,8 @@ if(NOT SKIP_PERFORMANCE_COMPARISON)
 endif()
 
 
-option(BUILD_TESTS "Build tests" ${CEREAL_MASTER_PROJECT})
-if(BUILD_TESTS)
+option(BUILD_UNIT_TESTS "Build unit tests" ${CEREAL_MASTER_PROJECT})
+if(BUILD_UNIT_TESTS)
     enable_testing()
     add_subdirectory(unittests)
 endif()

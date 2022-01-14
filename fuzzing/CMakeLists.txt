@@ -1,0 +1,2 @@
+add_executable(symmetry_fuzz_test symmetry_fuzz_test.cpp)
+target_link_libraries(symmetry_fuzz_test ${CEREAL_THREAD_LIBS})

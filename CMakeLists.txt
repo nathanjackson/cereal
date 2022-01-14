@@ -115,6 +115,11 @@ if(BUILD_TESTS)
     add_subdirectory(unittests)
 endif()
 
+option(BUILD_FUZZ_DRIVERS "Build fuzz testing drivers" ${CEREAL_MASTER_PROJECT})
+if(BUILD_FUZZ_DRIVERS)
+    add_subdirectory(fuzzing)
+endif()
+
 add_subdirectory(sandbox)
 
 add_subdirectory(doc)
